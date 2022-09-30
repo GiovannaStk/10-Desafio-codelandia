@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'lexeRegular';
+  src: url(../fonts/LexendDeca-Regular.ttf);
+}
+@font-face {
+  font-family: 'interMedium';
+  src: url(../fonts/Inter-Medium.ttf);
+}
+/* all */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button,
+input {
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+button:focus,
+input:focus {
+  border: 0;
+  outline: none;
+}
+header {
+  padding: 0 8em;
+}
+header nav {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav h2 {
+  color: #8257E6;
+  font-size: 20px;
+  font-family: 'lexeRegular';
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header nav ul li a {
+  color: #fff;
+  font-family: 'interMedium';
+  font-size: 14px;
+}
+header nav ul li .myAccount {
+  border: 1px solid #8257E6;
+  width: 100px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 30px;
+  cursor: pointer;
+}
+header nav ul li .myAccount a {
+  color: #fff;
+  font-family: 'lexeRegular';
+  font-size: 12px;
+}

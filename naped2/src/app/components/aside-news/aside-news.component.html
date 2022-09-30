@@ -1,0 +1,47 @@
+<div class="container-news">
+  <div class="container-left">
+    <div *ngFor="let item of listNews" class="box-item" >
+      <div class="box-img">
+        <img [src]="item.image">
+        <div class="target">Lorem</div>
+      </div>
+      <div class="box-text">
+        <h2 class="title">{{item.name}}</h2>
+        <p class="subtitle">{{item.description}}</p>
+        <button class="seeMore"><a>Ler noticia</a></button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-right">
+    <div class="box-item">
+      <h2 class="title">Lorem ipsum dolor</h2>
+      <div class="card" id="one">
+        <div class="target">Lorem</div>
+        <p class="description">
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Nulla eros tellus, malesuada et
+          velit in, blandit molestie dolor.
+        </p>
+      </div>
+      <div class="card" id="two">
+        <div class="target">Lorem</div>
+        <p class="description">
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Nulla eros tellus, malesuada et
+          velit in, blandit molestie dolor.
+        </p>
+      </div>
+      <div class="card" id="three">
+        <div class="target">Lorem</div>
+        <p class="description">
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Nulla eros tellus, malesuada et
+          velit in, blandit molestie dolor.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>

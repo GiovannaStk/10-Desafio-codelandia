@@ -1,0 +1,21 @@
+.container {
+  height: 380px;
+  width: 100%;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "one two " "one three";
+}
+.container .one {
+  grid-area: one;
+  background-color: pink;
+}
+.container .two {
+  grid-area: two;
+  background-color: aqua;
+}
+.container .three {
+  grid-area: three;
+  background-color: red;
+}

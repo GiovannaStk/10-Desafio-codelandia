@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'lexeRegular';
+  src: url(../fonts/LexendDeca-Regular.ttf);
+}
+@font-face {
+  font-family: 'interMedium';
+  src: url(../fonts/Inter-Medium.ttf);
+}
+/* all */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button,
+input {
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+button:focus,
+input:focus {
+  border: 0;
+  outline: none;
+}
+a,
+button {
+  cursor: pointer;
+}
+.container-news {
+  display: flex;
+  height: 700px;
+  padding: 4em 0;
+  color: #fff;
+}
+.container-news .target {
+  background-color: #8257E6;
+  width: 4rem;
+  height: 1.1rem;
+  border-radius: 3px;
+  font-family: 'lexeRegular';
+  font-weight: 400;
+  font-size: 0.7em;
+  text-align: center;
+  position: absolute;
+  top: 5px;
+  padding-top: 0.2em;
+  left: 10px;
+}
+.container-news .container-left {
+  width: 97%;
+  overflow-y: scroll;
+}
+.container-news .container-left .box-item {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 2em;
+}
+.container-news .container-left .box-item .box-img {
+  position: relative;
+}
+.container-news .container-left .box-item .box-img img {
+  width: 170px;
+  height: 120px;
+  max-width: 170px;
+}
+.container-news .container-left .box-item .box-text .title {
+  color: #FEFBFB;
+  width: 65%;
+  font-weight: 400;
+  font-family: 'lexeRegular';
+  font-size: 1em;
+}
+.container-news .container-left .box-item .box-text .subtitle {
+  font-family: 'interMedium';
+  font-weight: 400;
+  font-size: 0.8em;
+  color: #C4C4C4;
+  width: 50%;
+}
+.container-news .container-left .box-item .box-text .seeMore {
+  width: 100px;
+  height: 25px;
+  background-color: #8257E6;
+  border-radius: 3px;
+}
+.container-news .container-left .box-item .box-text .seeMore a {
+  font-family: 'interMedium';
+  font-weight: 400;
+  color: #FEFBFB;
+  font-size: 0.8em;
+}
+.container-news .container-left::-webkit-scrollbar {
+  width: 12px;
+}
+.container-news .container-left::-webkit-scrollbar-track {
+  background: #282830;
+  padding: 2px;
+}
+.container-news .container-left::-webkit-scrollbar-thumb {
+  background-color: #8257E6;
+}
+.container-news .container-right {
+  width: 50%;
+}
+.container-news .container-right .box-item {
+  padding-left: 1.5em;
+  font-family: 'lexeRegular';
+  font-weight: 400;
+}
+.container-news .container-right .box-item .title {
+  color: #FEFBFB;
+  border-bottom: 3px solid #8257E6;
+  width: 50%;
+  font-weight: 400;
+}
+.container-news .container-right .box-item .card {
+  width: 375px;
+  height: 206px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0.9em 0;
+  position: relative;
+}
+.container-news .container-right .box-item .card .description {
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  left: 10px;
+}
+.container-news .container-right .box-item #one {
+  background-image: url(../../../assets/img/aside-news/chihiro.png);
+}
+.container-news .container-right .box-item #two {
+  background-image: url(../../../assets/img/aside-news/filme.png);
+}
+.container-news .container-right .box-item #three {
+  background-image: url(../../../assets/img/aside-news/game.png);
+}

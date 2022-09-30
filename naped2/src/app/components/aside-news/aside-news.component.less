@@ -1,0 +1,139 @@
+@import url(../../../assets/css/variaveis.less);
+
+.container-news{
+  display: flex;
+  height: 700px;
+  padding: 4em 0;
+  color: @white;
+
+  .target{
+    background-color: #8257E6;
+    width: 4rem;
+    height: 1.1rem;
+    border-radius: @radiusP;
+    font-family: 'lexeRegular';
+    font-weight: 400;
+    font-size: 0.7em;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    padding-top: 0.2em;
+    left: 10px;
+  }
+
+  .container-left{
+    width: 97%;
+    overflow-y: scroll;
+
+    .box-item{
+      display: flex;
+      gap: 20px;
+      padding-bottom: 2em;
+
+      .box-img{
+        position: relative;
+
+        img{
+          width: 170px;
+          height: 120px;
+          max-width: 170px;
+        }
+      }
+
+      .box-text{
+        .title{
+          color:#FEFBFB;
+          width: 65%;
+          font-weight: 400;
+          font-family:'lexeRegular';
+          font-size: 1em;
+        }
+
+        .subtitle{
+          font-family:'interMedium';
+          font-weight: 400;
+          font-size: 0.8em;
+          color: @whitetwo;
+          width: 50%;
+        }
+
+        .seeMore{
+          width: 100px;
+          height: 25px;
+          background-color: @purple-light;
+          border-radius: @radiusP;
+
+
+          a{
+            font-family:'interMedium';
+            font-weight: 400;
+            color:#FEFBFB;
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+  }
+
+  .container-left::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  .container-left::-webkit-scrollbar-track {
+    background:
+    #282830;
+    padding: 2px;
+  }
+
+  .container-left::-webkit-scrollbar-thumb {
+    background-color: @purple-light;
+  }
+
+  .container-right{
+    width: 50%;
+
+    .box-item{
+      padding-left: 1.5em;
+      font-family:'lexeRegular';
+      font-weight: 400;
+
+      .title{
+        color:#FEFBFB;
+        border-bottom: 3px solid @purple-light;
+        width: 50%;
+        font-weight: 400;
+      }
+      .card{
+        width: 375px;
+        height: 206px;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0.9em 0;
+        position: relative;
+
+        .description{
+          text-align: left;
+          position: absolute;
+          bottom: 0;
+          width: 90%;
+          left: 10px;
+        }
+      }
+
+      #one{
+        background-image: url(../../../assets/img/aside-news/chihiro.png);
+      }
+
+      #two{
+        background-image: url(../../../assets/img/aside-news/filme.png);
+      }
+
+      #three{
+        background-image: url(../../../assets/img/aside-news/game.png);
+      }
+    }
+
+
+  }
+}

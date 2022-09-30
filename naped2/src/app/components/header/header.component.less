@@ -1,0 +1,47 @@
+@import url(../../../assets/css/variaveis.less);
+
+header{
+  padding: 0 8em;
+  nav{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2{
+      color: @purple-light;
+      font-size: 20px;
+      font-family:'lexeRegular';
+    }
+
+    ul{
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      li{
+        a{
+          color: @white;
+          font-family:'interMedium';
+          font-size: 14px;
+        }
+
+        .myAccount{
+          border:1px solid @purple-light;
+          width: 100px;
+          height: 30px;
+          background-color: transparent;
+          border-radius: 30px;
+          cursor: pointer;
+          a{
+            color: @white;
+            font-family:'lexeRegular';
+            font-size:12px;
+          }
+        }
+
+      }
+    }
+
+
+  }
+}

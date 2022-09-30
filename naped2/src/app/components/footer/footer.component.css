@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'lexeRegular';
+  src: url(../fonts/LexendDeca-Regular.ttf);
+}
+@font-face {
+  font-family: 'interMedium';
+  src: url(../fonts/Inter-Medium.ttf);
+}
+/* all */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button,
+input {
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+button:focus,
+input:focus {
+  border: 0;
+  outline: none;
+}
+a,
+button {
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  height: 50px;
+  width: 100%;
+}
+footer h2 {
+  color: #8257E6;
+  font-size: 20px;
+  font-family: 'lexeRegular';
+}
+footer p {
+  color: #fff;
+  font-size: 14px;
+  font-family: 'interMedium';
+}
